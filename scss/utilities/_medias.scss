@@ -1,0 +1,28 @@
+/* Medias */
+
+/* Pagina principal - contenedor */
+@media screen and (min-width: 1398px) {
+    .derechos {
+    height: 5rem; } }
+    
+@media screen and (max-width: 376px) {
+    .derechos {
+        height: auto; } }
+
+@media screen and (max-width: 425px) {
+    .titulo {
+        font-size: 2.3rem; } }
+
+@media screen and (max-width: 375px) {
+    .titulo {
+        font-size: 2.1rem; } }
+
+@media screen and (max-width: 320px) {
+    .titulo {
+        font-size: 1.8rem; } }
+
+@media screen and (max-width: 465px) {
+    .header .logo {
+        display: none; }
+    .header .enlace ul {
+        text-align: center; } }

@@ -1,22 +1,47 @@
+/*Reset*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-}
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace; }
 
-/* Logo */
+/* Medias */
+/* Pagina principal - contenedor */
+@media screen and (min-width: 1398px) {
+  .derechos {
+    height: 5rem; } }
 
+@media screen and (max-width: 376px) {
+  .derechos {
+    height: auto; } }
+
+@media screen and (max-width: 425px) {
+  .titulo {
+    font-size: 2.3rem; } }
+
+@media screen and (max-width: 375px) {
+  .titulo {
+    font-size: 2.1rem; } }
+
+@media screen and (max-width: 320px) {
+  .titulo {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 465px) {
+  .header .logo {
+    display: none; }
+  .header .enlace ul {
+    text-align: center; } }
+
+/*Logo*/
 .header {
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 7.9rem;
-    padding: 0 20px;
-}
-
-.logo :hover {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 7.9rem;
+  padding: 0 20px; }
+  .header .logo :hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -26,115 +51,85 @@
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
-    -o-transition: 1s;
-}
-
-.header .logo {
-    margin-right: auto;
-}
-.header .logo img {
+    -o-transition: 1s; }
+  .header .logo {
+    margin-right: auto; }
+  .header .logo img {
     height: 6rem;
-    width: auto;
-}
-/* Fin logo */
+    width: auto; }
 
-/* Barra de navegacion */
+/*Fin logo*/
+/*Barra de navegacion*/
 .header {
-    height: 10rem;
-}
-
-.header .enlaces li {
+  height: 10rem; }
+  .header .enlaces {
+    margin-bottom: auto; }
+  .header .enlaces li {
     display: inline-block;
-    padding: 0 20px;
-}
-
-.header .enlaces a {
+    padding: 0 20px; }
+  .header .enlaces a {
     font-size: 1.5rem;
     color: white;
-    text-decoration: none;
-}
+    text-decoration: none; }
 
-.enlaces {
-    margin-bottom: auto;
-}
-/* Fin barra de navegacion */
-
+/*Fin barra de navegacion*/
 .principal {
-    background-color: rgb(59, 59, 59);
-}
-
-.titulo {
+  background-color: #3b3b3b; }
+  .principal .titulo {
     font-size: 3rem;
     text-align: center;
     color: white;
-    font-weight: 500;
-}
+    font-weight: 500; }
 
-/* Primer section */
+/*Primer section*/
+.container {
+  /*Carrusel*/ }
+  .container .row .col-12 {
+    font-size: 1.1rem;
+    color: white; }
 
 .d-block {
-    width: 70rem;
-    height: 34.4rem;
-}
+  width: 70rem;
+  height: 34.4rem; }
 
-.col-12 {
-    font-size: 1.1rem;
-    color: white;
-}
-
-/* Fin primer section */
-
-/* Footer */
+/*Fin carrusel*/
+footer .contenedorFooter
 .redes {
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: auto;
-}
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: auto; }
 
 .redesSociales {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-}
-
-.redesSociales i{
+  display: flex;
+  justify-content: center;
+  background-color: black; }
+  .redesSociales i {
     font-size: 2rem;
     padding: 10px 20px;
-    height: 9.2vh;
-}
+    height: 9.2vh; }
+    .redesSociales i :hover {
+      transform: rotate(360deg);
+      transition: 1.5s;
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s;
+      -ms-transition: 1.5s;
+      -o-transition: 1.5s;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg); }
+  .redesSociales .instagram {
+    width: 2.3rem; }
+  .redesSociales .spotify {
+    width: 2.3rem; }
+  .redesSociales .youtube {
+    width: 2.3rem; }
 
-.redesSociales i :hover {
-    transform: rotate(360deg);
-    transition: 1.5s;
-    -webkit-transition: 1.5s;
-    -moz-transition: 1.5s;
-    -ms-transition: 1.5s;
-    -o-transition: 1.5s;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
-.instagram {
-    width: 2.3rem;
-}
-
-.spotify {
-    width: 2.3rem;
-}
-
-.youtube {
-    width: 2.3rem;
-}
-
+.contenedorDerechos
 .derechos {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 1.3rem;
-    height: 6.2rem;
-    margin-bottom: 0;
-}
-/* Fin footer */
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0; }
